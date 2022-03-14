@@ -1,3 +1,18 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * Employee class
+ * <p>
+ * 
+ * This is the Employee class takes in the parameters of firstname, lastname, id, and hourlypay.
+ * The Employee class has a method for computing pay and multiple associated exceptions. 
+ * It also has the capability of being able to clone. 
+ * </p>
+ * 
+ */
 
 public class Employee {
 
@@ -40,6 +55,15 @@ public class Employee {
 		this.hourlypay = hourlypay;
 	}
 
+	/**
+	 * simple computePay method which multiplies hours by pay. This method also has the added
+	 * ability to throw exceptions for undesired inputs.
+	 * 
+	 * @param hours the users inputs which will be multiplied with pay to compute total
+	 * @return total pay in float value is returned
+	 * @throws NumberFormatException
+	 */
+	
 	public float computePay(int hours) throws NumberFormatException {
 
 		float pay = 0;
@@ -73,6 +97,7 @@ public class Employee {
 		return pay;
 	}
 
+	
 	public Employee(String firstname, String lastname, int id, int hourlypay) {
 		super();
 		this.firstname = firstname;

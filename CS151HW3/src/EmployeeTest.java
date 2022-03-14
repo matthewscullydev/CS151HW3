@@ -1,4 +1,16 @@
-
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * EmployeeTest class
+ * <p>
+ * 
+ * This is the EmployeeTest class which is used to compute pay and print any exceptions if relevant.
+ * </p>
+ * 
+ */
 public class EmployeeTest {
 
 	public static void main(String[] args) {

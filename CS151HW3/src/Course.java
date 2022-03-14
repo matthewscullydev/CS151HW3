@@ -83,6 +83,10 @@ public class Course implements Cloneable {
 		this.weekday = weekday;
 	}
 	
+	/**
+	 * clone() method to return clone of object to the object student we are cloning.
+	 */
+	
 	protected Object clone() throws CloneNotSupportedException{		
 		return super.clone();
 	}

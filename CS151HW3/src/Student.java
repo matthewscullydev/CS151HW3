@@ -4,10 +4,11 @@
  * @version 1.0
  * @since 3-9-22
  * 
- * Course class
+ * Student class
  * <p>
  * 
- * This is the course class which
+ * This is the Student class which implements the cloneable class. This class contains 
+ * String values of department, firstname, and lastname. It also takes int age and float gpa and inherits a super class for course.
  * 
  * </p>
  * 
@@ -16,6 +17,7 @@
 public class Student implements Cloneable {
 
 	//variables
+	
 	String firstname;
 	String lastname;
 	int age;
@@ -23,8 +25,13 @@ public class Student implements Cloneable {
 	String department;
 	private Course course;
 	
+	
+	/**
+	 * simple constructor which inherits the course properties from the course object.
+	 *
+	 */
 	public Student(String firstname, String lastname, String department, int age, float gpa, Course course) {
-		
+		super();
 		this.gpa = gpa;
 		this.department = department;
 		this.age = age;
@@ -83,11 +90,22 @@ public class Student implements Cloneable {
 		this.course = course;
 	}
 
+	/**
+	 *  object clone(). method throws an exception if the clone fails, otherwise
+	 * it will assist in cloning the object.
+	 *
+	 */
+	
 	protected Object clone() throws CloneNotSupportedException {
 		Student student = (Student) super.clone();
 		student.course = (Course) course.clone();
 		return student;
 	}
+	
+	/**
+	 * simple print method
+	 *
+	 */
 	
 	public void printInfo(Student student)
 	{

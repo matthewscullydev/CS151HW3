@@ -1,3 +1,17 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * StudentTest class
+ * <p>
+ * 
+ * This is the StudentTest class which creates a course, student, and empty second student. 
+ * It then clones the first student into the empty student as instructed.
+ * </p>
+ * 
+ */
 
 public class StudentTest {
 
