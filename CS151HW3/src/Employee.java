@@ -61,7 +61,7 @@ public class Employee {
 	 * 
 	 * @param hours the users inputs which will be multiplied with pay to compute total
 	 * @return total pay in float value is returned
-	 * @throws NumberFormatException
+	 * @throws NumberFormatException numberformatexception
 	 */
 	
 	public float computePay(int hours) throws NumberFormatException {
@@ -86,12 +86,12 @@ public class Employee {
 
 		catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
-			System.out.println("hi");
+			System.out.println("Number Format Exception!");
 		}
 
 		catch (TooManyHoursWorkedException e) {
 			// TODO Auto-generated catch block
-			System.out.println("hi");
+			System.out.println("Too Many Hours Worked Exception!");
 		}
 
 		return pay;

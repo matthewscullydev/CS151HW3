@@ -26,10 +26,7 @@ public class Student implements Cloneable {
 	private Course course;
 	
 	
-	/**
-	 * simple constructor which inherits the course properties from the course object.
-	 *
-	 */
+	
 	public Student(String firstname, String lastname, String department, int age, float gpa, Course course) {
 		super();
 		this.gpa = gpa;
@@ -102,9 +99,10 @@ public class Student implements Cloneable {
 		return student;
 	}
 	
+
 	/**
-	 * simple print method
-	 *
+	 * Simple print method for student
+	 * @param student student
 	 */
 	
 	public void printInfo(Student student)

@@ -15,10 +15,14 @@
 
 public class TooManyHoursWorkedException extends Exception {
 	
+
 	/**
+	 * 	
 	 * exception contructor which takes parameter of String errorMsg.
 	 * default class initialized for customer exception.
 	 *
+	 *
+	 * @param errorMsg errormsg
 	 */
 	
 	public TooManyHoursWorkedException(String errorMsg) {
